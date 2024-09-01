@@ -1,0 +1,24 @@
+.blog-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4열 그리드 */
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  @media (max-width: 1200px) {
+    .blog-list {
+      grid-template-columns: repeat(3, 1fr); /* 화면 크기에 따라 열 수 조정 */
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .blog-list {
+      grid-template-columns: repeat(2, 1fr); /* 화면 크기에 따라 열 수 조정 */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .blog-list {
+      grid-template-columns: 1fr; /* 화면 크기에 따라 열 수 조정 */
+    }
+  }
